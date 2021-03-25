@@ -55,13 +55,13 @@ def main():
         filename = "21100229/"+str(i)+".wav"
         while True:
             system("clear")
-            print(sentences[i])
+            print(sentences[i-1])
             print("\n1) Record\n2) Demo")
             op = input("Enter operation number: ")
             if op == "1":
                 record(filename)
             elif op == "2":
-                demo(i+1)
+                demo(i)
                 system("pause")
                 continue
             else:
