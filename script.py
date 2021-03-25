@@ -42,7 +42,7 @@ def record(filename):
         print('\nError: ' + str(e))
 
 def demo(filename):
-    file = "wav/c"+str(filename)+".wav"
+    file = "demo/c"+str(filename)+".wav"
     print("\nPlaying demo for \""+file+"\"")
     subprocess.call(["afplay", file])
 
